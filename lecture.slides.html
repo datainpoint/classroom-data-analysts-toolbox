@@ -16157,125 +16157,15 @@ class="
 <li>啟動 Visual Studio Code 安裝 Microsoft 發行的 <code>Python</code> Extension</li>
 <li>載入範例資料 <a href="https://classroom-data-analysts-toolbox.s3.ap-northeast-3.amazonaws.com/gapminder.csv">gapminder.csv</a> 並顯示前五列。</li>
 </ul>
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 
 <span class="n">gapminder_csv</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;gapminder.csv&quot;</span><span class="p">)</span>
-<span class="n">gapminder_csv</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">gapminder_csv</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
 </pre></div>
 
-     </div>
 </div>
 </div>
 </div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>country</th>
-      <th>continent</th>
-      <th>year</th>
-      <th>lifeExp</th>
-      <th>pop</th>
-      <th>gdpPercap</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Afghanistan</td>
-      <td>Asia</td>
-      <td>1952</td>
-      <td>28.801</td>
-      <td>8425333</td>
-      <td>779.445314</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>Afghanistan</td>
-      <td>Asia</td>
-      <td>1957</td>
-      <td>30.332</td>
-      <td>9240934</td>
-      <td>820.853030</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Afghanistan</td>
-      <td>Asia</td>
-      <td>1962</td>
-      <td>31.997</td>
-      <td>10267083</td>
-      <td>853.100710</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Afghanistan</td>
-      <td>Asia</td>
-      <td>1967</td>
-      <td>34.020</td>
-      <td>11537966</td>
-      <td>836.197138</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Afghanistan</td>
-      <td>Asia</td>
-      <td>1972</td>
-      <td>36.088</td>
-      <td>13079460</td>
-      <td>739.981106</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
 </div></section><section >
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
@@ -16284,14 +16174,14 @@ class="
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="%E5%9C%A8-Visual-Studio-Code-%E4%BD%BF%E7%94%A8-R-%E8%AA%9E%E8%A8%80">&#22312; Visual Studio Code &#20351;&#29992; R &#35486;&#35328;<a class="anchor-link" href="#%E5%9C%A8-Visual-Studio-Code-%E4%BD%BF%E7%94%A8-R-%E8%AA%9E%E8%A8%80">&#182;</a></h2><ul>
-<li>啟動 R 語言安裝 <code>languageserver</code> 套件。</li>
-<li>啟動 Visual Studio Code 安裝 REditorSupport 發行的 <code>R</code> 模組。</li>
+<li>啟動 RStudio 安裝 <code>languageserver</code> 套件。</li>
+<li>啟動 Visual Studio Code 安裝 REditorSupport 發行的 <code>R</code> Extension</li>
 <li>以 <code>setwd()</code> 函數切換至專案資料夾。</li>
 <li>載入範例資料 <a href="https://classroom-data-analysts-toolbox.s3.ap-northeast-3.amazonaws.com/gapminder.csv">gapminder.csv</a> 並顯示前五列。</li>
 </ul>
 <div class="highlight"><pre><span></span><span class="nf">setwd</span><span class="p">(</span><span class="s">&quot;path/to/project&quot;</span><span class="p">)</span>
 <span class="n">gapminder_csv</span> <span class="o">&lt;-</span> <span class="nf">read.csv</span><span class="p">(</span><span class="s">&quot;gapminder.csv&quot;</span><span class="p">)</span>
-<span class="nf">head</span><span class="p">(</span><span class="n">gapminder_csv</span><span class="p">,</span> <span class="n">n</span> <span class="o">=</span> <span class="m">5</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="nf">head</span><span class="p">(</span><span class="n">gapminder_csv</span><span class="p">,</span> <span class="n">n</span> <span class="o">=</span> <span class="m">5</span><span class="p">))</span>
 </pre></div>
 
 </div>
@@ -16304,34 +16194,14 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="%E5%9C%A8-JupyterLab-%E4%BD%BF%E7%94%A8-SQL%EF%BC%88Windows-%E4%BD%9C%E6%A5%AD%E7%B3%BB%E7%B5%B1%EF%BC%89">&#22312; JupyterLab &#20351;&#29992; SQL&#65288;Windows &#20316;&#26989;&#31995;&#32113;&#65289;<a class="anchor-link" href="#%E5%9C%A8-JupyterLab-%E4%BD%BF%E7%94%A8-SQL%EF%BC%88Windows-%E4%BD%9C%E6%A5%AD%E7%B3%BB%E7%B5%B1%EF%BC%89">&#182;</a></h2><ul>
-<li>開啟 Anaconda Prompt</li>
+<h2 id="%E5%9C%A8-JupyterLab-%E4%BD%BF%E7%94%A8-SQL">&#22312; JupyterLab &#20351;&#29992; SQL<a class="anchor-link" href="#%E5%9C%A8-JupyterLab-%E4%BD%BF%E7%94%A8-SQL">&#182;</a></h2><ul>
+<li>開啟終端機（Windows 作業系統開啟 Anaconda Prompt）。</li>
 <li>透過 Miniconda 提供的 <code>conda</code> 軟體建立 <code>sql</code> 環境。</li>
-<li>在 <code>sql</code> 環境中安裝 Xeus-SQL、Jupyter Lab、PyMySQL 與 Pandas</li>
+<li>在 <code>sql</code> 環境中安裝 Xeus-SQL、soci-mysql 與 Jupyter Lab</li>
 </ul>
 <div class="highlight"><pre><span></span>conda create -n sql
 conda activate sql
-conda install xeus-sql jupyterlab pymysql pandas -c conda-forge
-</pre></div>
-
-</div>
-</div>
-</div>
-</div></section><section >
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="%E5%9C%A8-JupyterLab-%E4%BD%BF%E7%94%A8-SQL%EF%BC%88macOS%EF%BC%89">&#22312; JupyterLab &#20351;&#29992; SQL&#65288;macOS&#65289;<a class="anchor-link" href="#%E5%9C%A8-JupyterLab-%E4%BD%BF%E7%94%A8-SQL%EF%BC%88macOS%EF%BC%89">&#182;</a></h2><ul>
-<li>開啟 macOS 內建的終端機（與 Windows 作業系統有差異）。</li>
-<li>透過 Miniconda 提供的 <code>conda</code> 軟體建立 <code>sql</code> 環境。</li>
-<li>在 <code>sql</code> 環境中安裝 Xeus-SQL 與 Jupyter Lab</li>
-</ul>
-<div class="highlight"><pre><span></span>conda create -n sql
-conda activate sql
-conda install xeus-sql jupyterlab
+conda install xeus-sql soci-mysql jupyterlab -c conda-forge
 </pre></div>
 
 </div>
@@ -16349,31 +16219,8 @@ conda install xeus-sql jupyterlab
 <li>新增以 Xeus-SQL 為運算核心的筆記本。</li>
 <li>建立與 MySQL 資料庫的連線、寫作簡短的 SQL 查詢。</li>
 </ul>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<pre><code>%LOAD mysql db=dbname user=root password='root user password'
-</code></pre>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<div class="highlight"><pre><span></span><span class="k">SELECT</span><span class="w"> </span><span class="n">country</span><span class="p">,</span><span class="w"></span>
+<div class="highlight"><pre><span></span><span class="o">%</span><span class="k">LOAD</span><span class="w"> </span><span class="n">mysql</span><span class="w"> </span><span class="n">db</span><span class="o">=</span><span class="n">dbname</span><span class="w"> </span><span class="k">user</span><span class="o">=</span><span class="n">root</span><span class="w"> </span><span class="n">password</span><span class="o">=</span><span class="s1">&#39;root user password&#39;</span><span class="w"></span>
+<span class="k">SELECT</span><span class="w"> </span><span class="n">country</span><span class="p">,</span><span class="w"></span>
 <span class="w">       </span><span class="k">year</span><span class="p">,</span><span class="w"></span>
 <span class="w">       </span><span class="n">pop</span><span class="p">,</span><span class="w"></span>
 <span class="w">       </span><span class="n">lifeExp</span><span class="p">,</span><span class="w"></span>
@@ -16404,8 +16251,8 @@ conda install xeus-sql jupyterlab
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="%E5%9C%A8-JupyterLab-%E4%BD%BF%E7%94%A8-R-%E8%AA%9E%E8%A8%80%EF%BC%88Windows-%E4%BD%9C%E6%A5%AD%E7%B3%BB%E7%B5%B1%EF%BC%89">&#22312; JupyterLab &#20351;&#29992; R &#35486;&#35328;&#65288;Windows &#20316;&#26989;&#31995;&#32113;&#65289;<a class="anchor-link" href="#%E5%9C%A8-JupyterLab-%E4%BD%BF%E7%94%A8-R-%E8%AA%9E%E8%A8%80%EF%BC%88Windows-%E4%BD%9C%E6%A5%AD%E7%B3%BB%E7%B5%B1%EF%BC%89">&#182;</a></h2><ul>
-<li>啟動 R 語言。</li>
+<h2 id="%E5%9C%A8-JupyterLab-%E4%BD%BF%E7%94%A8-R-%E8%AA%9E%E8%A8%80">&#22312; JupyterLab &#20351;&#29992; R &#35486;&#35328;<a class="anchor-link" href="#%E5%9C%A8-JupyterLab-%E4%BD%BF%E7%94%A8-R-%E8%AA%9E%E8%A8%80">&#182;</a></h2><ul>
+<li>開啟終端機啟動 R 語言。</li>
 <li>安裝 IRkernel 套件。</li>
 <li>使用 IRKernel 套件的 <code>installspec()</code> 函數新增 R 語言運算核心。</li>
 </ul>
@@ -16423,13 +16270,12 @@ conda install xeus-sql jupyterlab
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="%E5%9C%A8-JupyterLab-%E4%BD%BF%E7%94%A8-R-%E8%AA%9E%E8%A8%80%EF%BC%88macOS%EF%BC%89">&#22312; JupyterLab &#20351;&#29992; R &#35486;&#35328;&#65288;macOS&#65289;<a class="anchor-link" href="#%E5%9C%A8-JupyterLab-%E4%BD%BF%E7%94%A8-R-%E8%AA%9E%E8%A8%80%EF%BC%88macOS%EF%BC%89">&#182;</a></h2><ul>
-<li>開啟 macOS 內建的終端機啟動 R 語言（與 Windows 作業系統有差異）。</li>
-<li>安裝 IRkernel 套件。</li>
-<li>使用 IRKernel 套件的 <code>installspec()</code> 函數新增 R 語言運算核心。</li>
+<h2 id="%E5%9C%A8-JupyterLab-%E4%BD%BF%E7%94%A8-R-%E8%AA%9E%E8%A8%80%EF%BC%88%E7%BA%8C%EF%BC%89">&#22312; JupyterLab &#20351;&#29992; R &#35486;&#35328;&#65288;&#32396;&#65289;<a class="anchor-link" href="#%E5%9C%A8-JupyterLab-%E4%BD%BF%E7%94%A8-R-%E8%AA%9E%E8%A8%80%EF%BC%88%E7%BA%8C%EF%BC%89">&#182;</a></h2><ul>
+<li>新增以 R 語言為運算核心的筆記本。</li>
+<li>載入範例資料 <a href="https://classroom-data-analysts-toolbox.s3.ap-northeast-3.amazonaws.com/gapminder.csv">gapminder.csv</a> 並顯示前五列。</li>
 </ul>
-<div class="highlight"><pre><span></span><span class="nf">install.packages</span><span class="p">(</span><span class="s">&quot;IRkernel&quot;</span><span class="p">)</span>
-<span class="n">IRkernel</span><span class="o">::</span><span class="nf">installspec</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><span class="n">gapminder_csv</span> <span class="o">&lt;-</span> <span class="nf">read.csv</span><span class="p">(</span><span class="s">&quot;gapminder.csv&quot;</span><span class="p">)</span>
+<span class="nf">head</span><span class="p">(</span><span class="n">gapminder_csv</span><span class="p">,</span> <span class="n">n</span> <span class="o">=</span> <span class="m">5</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -16661,9 +16507,10 @@ conda install xeus-sql jupyterlab
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="%E5%9C%A8-R-%E8%AA%9E%E8%A8%80%E4%B8%AD%E9%80%A3%E7%B5%90-MySQL">&#22312; R &#35486;&#35328;&#20013;&#36899;&#32080; MySQL<a class="anchor-link" href="#%E5%9C%A8-R-%E8%AA%9E%E8%A8%80%E4%B8%AD%E9%80%A3%E7%B5%90-MySQL">&#182;</a></h2><ul>
 <li>啟動 RStudio</li>
-<li>安裝 RMariaDB 套件（DBI 套件也會一併安裝）。</li>
+<li>安裝 RMariaDB 套件、DBI 套件。</li>
 </ul>
-<div class="highlight"><pre><span></span><span class="nf">install.packages</span><span class="p">(</span><span class="s">&quot;RMariaDB&quot;</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><span class="n">pkgs</span> <span class="o">&lt;-</span> <span class="nf">c</span><span class="p">(</span><span class="s">&quot;RMariaDB&quot;</span><span class="p">,</span> <span class="s">&quot;DBI&quot;</span><span class="p">)</span>
+<span class="nf">install.packages</span><span class="p">(</span><span class="n">pkgs</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -16696,7 +16543,7 @@ conda install xeus-sql jupyterlab
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="%E5%9C%A8-R-%E8%AA%9E%E8%A8%80%E4%B8%AD%E9%80%A3%E7%B5%90-MySQL%EF%BC%88%E7%BA%8C%EF%BC%89">&#22312; R &#35486;&#35328;&#20013;&#36899;&#32080; MySQL&#65288;&#32396;&#65289;<a class="anchor-link" href="#%E5%9C%A8-R-%E8%AA%9E%E8%A8%80%E4%B8%AD%E9%80%A3%E7%B5%90-MySQL%EF%BC%88%E7%BA%8C%EF%BC%89">&#182;</a></h2><p>使用 DBI 的 <code>dbGetquery()</code> 函數送出 SQL 查詢。</p>
+<h2 id="%E5%9C%A8-R-%E8%AA%9E%E8%A8%80%E4%B8%AD%E9%80%A3%E7%B5%90-MySQL%EF%BC%88%E7%BA%8C%EF%BC%89">&#22312; R &#35486;&#35328;&#20013;&#36899;&#32080; MySQL&#65288;&#32396;&#65289;<a class="anchor-link" href="#%E5%9C%A8-R-%E8%AA%9E%E8%A8%80%E4%B8%AD%E9%80%A3%E7%B5%90-MySQL%EF%BC%88%E7%BA%8C%EF%BC%89">&#182;</a></h2><p>使用 DBI 的 <code>dbGetQuery()</code> 函數送出 SQL 查詢。</p>
 <div class="highlight"><pre><span></span><span class="nf">library</span><span class="p">(</span><span class="s">&quot;DBI&quot;</span><span class="p">)</span>
 
 <span class="n">sql_query</span> <span class="o">&lt;-</span> <span class="s">&quot;</span>
@@ -16708,7 +16555,7 @@ conda install xeus-sql jupyterlab
 <span class="s">  FROM gapminder</span>
 <span class="s"> WHERE country = &#39;Taiwan&#39;;</span>
 <span class="s">&quot;</span>
-<span class="n">result</span> <span class="o">&lt;-</span> <span class="nf">dbGetQuery</span><span class="p">(</span><span class="n">sql_query</span><span class="p">,</span> <span class="n">con</span><span class="p">)</span>
+<span class="n">result</span> <span class="o">&lt;-</span> <span class="nf">dbGetQuery</span><span class="p">(</span><span class="n">con</span><span class="p">,</span> <span class="n">sql_query</span><span class="p">)</span>
 <span class="n">result</span>
 <span class="nf">dbDisconnect</span><span class="p">(</span><span class="n">con</span><span class="p">)</span>
 </pre></div>
